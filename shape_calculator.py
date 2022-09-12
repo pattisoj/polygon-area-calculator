@@ -43,6 +43,18 @@ class Rectangle:
     return f"Rectangle(width={self.width}, height={self.height})" 
 
 
+class Square(Rectangle):
+  def __init__(self, side):
+    super().__init__(side, side)
 
+  def set_side(self, side):
+    self.height = side
+    self.width = side
 
-# class Square:
+  def set_height(self, height):
+      self.height = height
+      self.width = height
+
+  def set_width(self, width):
+      self.width = width
+      self.heigth = width
